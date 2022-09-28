@@ -34,3 +34,24 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Checkout writeRepo
+        uses: actions/checkout@v3
+        with:
+          repository: TryToLearnProgramming/writeRepo
+          path: ./writeRepo
+          ref: main
+
+      - name: send file
+        run: |
+          cp TryToLearnProgramming/readRepo/env.text ./gitops/newtest.text
+
+      - name: changes
+        run: |
+          cd writeRepo
+          git config --global user.email "samivivake@gmail.com"
+          git config --global user.name "sami-jee"
+          git add .
+          git commit -m "done"
+
+
