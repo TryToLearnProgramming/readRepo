@@ -50,7 +50,9 @@ jobs:
         run: |
           cd writeRepo
           ls
+          echo $var
           echo $var >> ./test.txt
+          cat test.txt
           git config --global user.email "samivivake@gmail.com"
           git config --global user.name "sami-jee"
           git add .
