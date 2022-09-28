@@ -38,7 +38,7 @@ jobs:
       - name: Checkout writeRepo
         uses: actions/checkout@v3
         with:
-          repository: TryToLearnProgramming/writeRepo
+          repository: TryToLearnProgramming
           path: ./writeRepo
           ref: main
 
