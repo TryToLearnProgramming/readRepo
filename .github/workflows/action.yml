@@ -45,7 +45,7 @@ jobs:
 
       - name: send file and commit
         run: |
-          echo $GITHUB_ENV > ./writeRepotest.txt
+          echo $GITHUB_ENV > ./writeRepo/test.txt
           cd writeRepo
           git config --global user.email "samivivake@gmail.com"
           git config --global user.name "sami-jee"
