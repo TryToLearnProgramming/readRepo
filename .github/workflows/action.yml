@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
+      
       - name: Run a one-line script
         run: |
           var=`cat env.txt | grep VAR1`
@@ -46,8 +47,9 @@ jobs:
 
       - name: send file and commit
         run: |
-          echo $var >> ./writeRepo/test.txt
           cd writeRepo
+          ls
+          echo $var >> ./test.txt
           git config --global user.email "samivivake@gmail.com"
           git config --global user.name "sami-jee"
           git add .
