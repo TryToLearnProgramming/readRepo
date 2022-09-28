@@ -55,7 +55,7 @@ jobs:
           cat test.txt
           git config --global user.email "samivivake@gmail.com"
           git config --global user.name "Sami-Jee"
-          git remote set-url origin https://samivivake@gmail.com:Sami@123$@github.com/TryToLearnProgramming/writeRepo.git
+          git remote set-url origin git@github.com:TryToLearnProgramming/readRepo.git
           git add .
           git commit -m "done"
           parallel --retries 10 --delay 3 ::: "git pull --rebase && git push origin main"
