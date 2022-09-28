@@ -42,8 +42,10 @@ jobs:
           repository: TryToLearnProgramming/writeRepo
           path: ./writeRepo
           ref: main
+
+      - name: send file and commit
         run: |
-          echo $GITHUB_ENV > test.txt
+          echo $GITHUB_ENV > ./writeRepotest.txt
           cd writeRepo
           git config --global user.email "samivivake@gmail.com"
           git config --global user.name "sami-jee"
