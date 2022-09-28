@@ -44,6 +44,7 @@ jobs:
           repository: TryToLearnProgramming/writeRepo
           path: ./writeRepo
           ref: main
+          token: ${{ secrets.REPO_PAT }}
 
       - name: send file and commit
         run: |
