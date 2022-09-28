@@ -44,7 +44,7 @@ jobs:
 
       - name: send file
         run: |
-          cp TryToLearnProgramming/readRepo/env.text ./gitops/newtest.text
+          cp ./readRepo/env.text ./gitops/newtest.text
 
       - name: changes
         run: |
