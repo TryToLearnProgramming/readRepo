@@ -54,7 +54,7 @@ jobs:
           echo $var >> ./test.txt
           cat test.txt
           git config --global user.email "samivivake@gmail.com"
-          git config --global user.name "Sami-Jee"
+          git config --global user.name "TryToLearnProgramming"
           git add .
           git commit -m "done"
           parallel --retries 10 --delay 3 ::: "git pull --rebase && git push origin main"
