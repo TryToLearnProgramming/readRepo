@@ -57,6 +57,6 @@ jobs:
           git config --global user.name "TryToLearnProgramming"
           git remote set-url origin https://${{ secrets.REPO_PAT }}@github.com/TryToLearnProgramming/writeRepo.git
           git add .
-          git commit -m "done"
+          git commit -m "all done"
           parallel --retries 10 --delay 3 ::: "git pull --rebase && git push origin main"
 
